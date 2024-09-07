@@ -128,7 +128,7 @@ a:link {
 
 .main__section-next-button::before {
   content: "";
-  background-image:url("/image/expand.svg");
+  background-image:url("/image/expand-icon.svg");
   width: 24px;
   height: 24px;
   position: absolute;
