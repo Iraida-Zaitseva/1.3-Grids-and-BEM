@@ -87,7 +87,8 @@ body {
   display: flex;
   overflow: auto;
   margin-bottom: 24px;
-  margin-left: 16px;
+  margin-left: 24px;
+  padding-bottom: px;
 }
 
 .main__nav-list-item {
@@ -114,6 +115,7 @@ a:link {
 
 .main__section-about {
   margin-left: 16px;
+
 }
 
 .main__section-next-button {
@@ -138,7 +140,9 @@ a:link {
 .about-tablet {
   margin-top: 16px;
 }
-
+.about-desktop {
+  max-width: 20em;
+}
 @media (min-width: 1px) and (max-width: 500px) {
 
   .nav__wrapper-menu .nav__wrapper-call-chat-profile,
@@ -221,14 +225,16 @@ a:link {
   }
 
   .main__section-about {
-    line-height: 20px;
+    line-height: 20px; 
   }
 }
 
 @media (min-width: 769px) {
   .header {
     display: none;
+
   }
+
 
   .main__section {
     display: flex;
@@ -262,7 +268,7 @@ a:link {
   }
 
   .main__nav-list {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .main__list-link {
@@ -285,5 +291,11 @@ a:link {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+.main__section-about.about-desktop {
+    display: none;
   }
 }
